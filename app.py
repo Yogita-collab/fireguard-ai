@@ -23,52 +23,52 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-.block-container { padding: 2rem 2rem 4rem; max-width: 780px; }
-.hero { text-align:center; padding:2rem 1rem 1rem; }
-.hero-badge {
-    display:inline-block; background:rgba(255,80,50,0.12);
-    border:1px solid rgba(255,80,50,0.3); color:#ff7055;
-    font-size:0.72rem; font-weight:600; letter-spacing:0.12em;
-    text-transform:uppercase; padding:0.3rem 0.9rem;
-    border-radius:99px; margin-bottom:1rem;
-}
-.hero h1 { font-size:2.2rem; font-weight:700; color:#ffffff; margin:0 0 0.4rem; }
-.hero p  { color:#8b8b9a; font-size:0.92rem; margin:0; }
-.card {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
+    .block-container { padding: 2rem 2rem 4rem; max-width: 780px; }
+    .hero { text-align:center; padding:2rem 1rem 1rem; }
+    .hero-badge {
+        display:inline-block; background:rgba(255,80,50,0.12);
+        border:1px solid rgba(255,80,50,0.3); color:#ff7055;
+        font-size:0.72rem; font-weight:600; letter-spacing:0.12em;
+        text-transform:uppercase; padding:0.3rem 0.9rem;
+        border-radius:99px; margin-bottom:1rem;
+    }
+    .hero h1 { font-size:2.2rem; font-weight:700; color:#ffffff; margin:0 0 0.4rem; }
+    .hero p  { color:#8b8b9a; font-size:0.92rem; margin:0; }
+    .card {
     background:#13131a; border:1px solid #1e1e2e;
     border-radius:16px; padding:1.6rem 1.8rem; margin-bottom:1.2rem;
-}
-.card-title {
-    font-size:0.75rem; font-weight:600; letter-spacing:0.1em;
-    text-transform:uppercase; color:#5a5a72; margin-bottom:1.2rem;
-}
-.result-high   { background:linear-gradient(135deg,#2a0e0e,#1a0808); border:1px solid #6b1a1a; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
-.result-medium { background:linear-gradient(135deg,#1f1a08,#151208); border:1px solid #5a4a0a; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
-.result-low    { background:linear-gradient(135deg,#0a1f12,#081510); border:1px solid #0f4a22; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
-.result-score  { font-size:4rem; font-weight:700; line-height:1; margin:0.4rem 0; }
-.result-label  { font-size:0.82rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; }
-.result-sub    { font-size:0.82rem; color:#6b6b80; margin-top:0.4rem; }
-.tip {
-    display:flex; align-items:flex-start; gap:0.8rem;
-    background:#0e0e18; border:1px solid #1a1a2e;
-    border-radius:10px; padding:0.9rem 1rem; margin-bottom:0.6rem;
-}
-.tip-icon  { font-size:1.1rem; margin-top:1px; }
-.tip-text  { font-size:0.875rem; color:#b0b0c4; line-height:1.5; }
-.tip-title { font-weight:600; color:#d0d0e4; font-size:0.875rem; }
-.stButton > button {
-    width:100%;
-    background:linear-gradient(135deg,#ff4422,#cc2200);
-    color:white; border:none; border-radius:10px;
-    padding:0.8rem 2rem; font-size:0.95rem;
-    font-weight:600; letter-spacing:0.04em;
-}
-.stButton > button:hover {
-    background:linear-gradient(135deg,#ff5533,#dd3311);
-    box-shadow:0 8px 24px rgba(255,68,34,0.3);
-}
+    }
+    .card-title {
+        font-size:0.75rem; font-weight:600; letter-spacing:0.1em;
+        text-transform:uppercase; color:#5a5a72; margin-bottom:1.2rem;
+    }
+    .result-high   { background:linear-gradient(135deg,#2a0e0e,#1a0808); border:1px solid #6b1a1a; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
+    .result-medium { background:linear-gradient(135deg,#1f1a08,#151208); border:1px solid #5a4a0a; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
+    .result-low    { background:linear-gradient(135deg,#0a1f12,#081510); border:1px solid #0f4a22; border-radius:16px; padding:2rem; text-align:center; margin:1rem 0; }
+    .result-score  { font-size:4rem; font-weight:700; line-height:1; margin:0.4rem 0; }
+    .result-label  { font-size:0.82rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; }
+    .result-sub    { font-size:0.82rem; color:#6b6b80; margin-top:0.4rem; }
+    .tip {
+        display:flex; align-items:flex-start; gap:0.8rem;
+        background:#0e0e18; border:1px solid #1a1a2e;
+        border-radius:10px; padding:0.9rem 1rem; margin-bottom:0.6rem;
+    }
+    .tip-icon  { font-size:1.1rem; margin-top:1px; }
+    .tip-text  { font-size:0.875rem; color:#b0b0c4; line-height:1.5; }
+    .tip-title { font-weight:600; color:#d0d0e4; font-size:0.875rem; }
+    .stButton > button {
+        width:100%;
+        background:linear-gradient(135deg,#ff4422,#cc2200);
+        color:white; border:none; border-radius:10px;
+        padding:0.8rem 2rem; font-size:0.95rem;
+        font-weight:600; letter-spacing:0.04em;
+    }
+    .stButton > button:hover {
+        background:linear-gradient(135deg,#ff5533,#dd3311);
+        box-shadow:0 8px 24px rgba(255,68,34,0.3);
+    }
 #MainMenu { visibility: hidden !important; }
 header { visibility: hidden !important; }
 footer { visibility: hidden !important; }
@@ -79,6 +79,9 @@ footer { visibility: hidden !important; }
 label, .stRadio label { color:#8b8b9a !important; font-size:0.85rem !important; }
 </style>
 """, unsafe_allow_html=True)
+
+st.write("✅ CSS Part 1 done")
+st.stop()
 
 st.markdown("""
 <div class="hero">
