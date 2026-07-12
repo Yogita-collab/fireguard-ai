@@ -8,6 +8,33 @@ import joblib
 import pandas as pd
 import plotly.graph_objects as go
 
+import warnings
+warnings.filterwarnings('ignore')
+import streamlit as st
+st.write("✅ Step 1: Streamlit loaded")
+
+import joblib
+st.write("✅ Step 2: Joblib imported")
+
+import pandas as pd
+st.write("✅ Step 3: Pandas imported")
+
+import plotly.graph_objects as go
+st.write("✅ Step 4: Plotly imported")
+
+st.write("⏳ Step 5: Loading model now...")
+model = joblib.load('fire_risk_model.pkl')
+st.write("✅ Step 5: Model loaded successfully!")
+
+le = joblib.load('label_encoder.pkl')
+st.write("✅ Step 6: Label encoder loaded!")
+
+cols = joblib.load('feature_columns.pkl')
+st.write("✅ Step 7: Feature columns loaded!")
+
+st.write("🎉 ALL LOADED — stopping here for debug")
+st.stop()
+
 @st.cache_resource
 def load_model():
     model = joblib.load('fire_risk_model.pkl')
