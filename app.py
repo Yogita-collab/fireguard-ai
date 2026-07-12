@@ -143,7 +143,9 @@ if predict:
     if incidents > 0:          penalty += incidents * 8
     if neglected == 1:         penalty += 12
     if construction_risk >= 4: penalty += 10
-
+        penalty += (occupancy_risk - 2) * 4
+        penalty += min(floors * 1.5, 15)   
+        
     risk_pct = round(min(100, max(5, risk_pct + penalty)), 1)
 
     if risk_pct >= 70:
