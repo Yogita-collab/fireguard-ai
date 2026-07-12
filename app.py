@@ -1,6 +1,9 @@
 import warnings
 warnings.filterwarnings('ignore')
 import streamlit as st
+
+st.write("TEST — App is running") 
+
 import joblib
 import pandas as pd
 import plotly.graph_objects as go
