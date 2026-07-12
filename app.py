@@ -21,9 +21,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-st.write("✅ Page config done — testing here")
-st.stop()
-
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -90,6 +87,8 @@ st.markdown("""
     <p>Predict building fire risk before incidents occur — powered by machine learning</p>
 </div>
 """, unsafe_allow_html=True)
+st.write("✅ CSS done — testing here")
+st.stop()
 
 st.markdown('<div class="card"><div class="card-title">Building Information</div>', unsafe_allow_html=True)
 
