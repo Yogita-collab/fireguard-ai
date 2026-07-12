@@ -72,9 +72,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.write("✅ CSS Part 1 done")
-st.stop()
-
 st.markdown("""
 <div class="hero">
     <div class="hero-badge">AI-Powered Risk Analysis</div>
