@@ -62,7 +62,13 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     background:linear-gradient(135deg,#ff5533,#dd3311);
     box-shadow:0 8px 24px rgba(255,68,34,0.3);
 }
-#MainMenu, footer, header { visibility:hidden; }
+#MainMenu { visibility: hidden !important; }
+header { visibility: hidden !important; }
+footer { visibility: hidden !important; }
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
+[data-testid="stStatusWidget"] { display: none !important; }
+[data-testid="stMainBlockContainer"] > div:last-child { display: none !important; }
 label, .stRadio label { color:#8b8b9a !important; font-size:0.85rem !important; }
 </style>
 """, unsafe_allow_html=True)
