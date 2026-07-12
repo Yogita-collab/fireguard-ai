@@ -185,7 +185,7 @@ if predict:
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         font={"family":"Inter"}
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
     st.markdown('<div class="card"><div class="card-title">Risk Factor Breakdown</div>', unsafe_allow_html=True)
     factors = {
