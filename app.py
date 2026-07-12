@@ -5,6 +5,13 @@ import joblib
 import pandas as pd
 import plotly.graph_objects as go
 
+st.set_page_config(
+    page_title="FireGuard AI",
+    page_icon="🔥",
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
+
 @st.cache_resource
 def load_model():
     model = joblib.load('fire_risk_model.pkl')
@@ -13,13 +20,6 @@ def load_model():
     return model, le, cols
 
 model, le, cols = load_model()
-
-st.set_page_config(
-    page_title="FireGuard AI",
-    page_icon="🔥",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
 
 st.markdown("""
 <style>
