@@ -79,8 +79,6 @@ st.markdown("""
     <p>Predict building fire risk before incidents occur — powered by machine learning</p>
 </div>
 """, unsafe_allow_html=True)
-st.write("✅ CSS done — testing here")
-st.stop()
 
 st.markdown('<div class="card"><div class="card-title">Building Information</div>', unsafe_allow_html=True)
 
